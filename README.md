@@ -1,9 +1,3 @@
-There are various Python packages to extract the text from a PDF with Python.  
-pdftotext  
-
-pdftotext package: Seems to work pretty well, but it has no options e.g. to extract bounding boxes  
-Installation  
-
 ## For Ubuntu:  
 ```sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev```
 
