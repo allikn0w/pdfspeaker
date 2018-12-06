@@ -1,13 +1,8 @@
-#!/usr/bin/env python3
-
 import PyPDF2
 
-with open('redes_de_computadoras-freelibros-org(1).pdf','rb') as f:
-  pdf = PyPDF2.PdfFileReader(f)
-
-  page = pdf.getPage(34)
-  print(page)
-  print('Page type: {}'.format(str(type(page))))
-
-  text = page.extractText()
-  print(text)
+pdf_file = open('redes_de_computadoras-freelibros-org(1).pdf', 'rb')
+read_pdf = PyPDF2.PdfFileReader(pdf_file)
+number_of_pages = read_pdf.getNumPages()
+page = read_pdf.getPage(93)
+page_content = page.extractText()
+print(page_content.encode('utf-8'))
